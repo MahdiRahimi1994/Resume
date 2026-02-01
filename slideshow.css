@@ -1,84 +1,70 @@
-/* Reset some default styles */
 * {
   box-sizing: border-box;
 }
 
-h2 {
-  font-size: 26px;
-  margin-bottom: 12px;
-}
-
-/* Main container for the slider */
 .slider {
   position: relative;
   overflow: hidden;
-  height: 400px; /* Adjust the height as needed */
-  border-radius: 8px;
+  height: 420px;
+  border-radius: 10px;
+  border: 1px solid #cfcfcf;
+  background: #000;
 }
 
-.slider h3 {
-    font-size: 24px;
-}
-
-.slider p {
-    margin: 0;
-}
-
-/* Individual slides */
 .slide {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; /* Initially hide all slides */
-  transition: opacity 0.5s ease; /* Fade transition effect */
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
-/* Active slide */
 .slide.active {
   opacity: 1;
 }
 
-/* Image within each slide */
 .slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: grayscale(10%);
 }
 
-/* Slide content overlay */
 .slide-content {
   position: absolute;
   bottom: 0;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.75); /* Semi-transparent background */
+  padding: 18px;
+  background-color: rgba(0, 0, 0, 0.78);
   color: #fff;
-  padding: 20px;
+  text-align: center;
 }
 
-/* Dot navigation container */
+.slide-content h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.slide-content p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .dot-navigation {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
-/* Dot navigation item */
 .dot-navigation-item {
   width: 10px;
   height: 10px;
-  background-color: #ccc;
+  background-color: #cfcfcf;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 6px;
   cursor: pointer;
 }
 
-/* Active dot */
 .dot-navigation-item.active {
   background-color: #555;
 }
