@@ -1,127 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Personal Homepage</title>
-    <!-- Include the icon font library, such as Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="slideshow.css">
-    <link rel="stylesheet" href="styles.css"> <!-- We'll create this stylesheet later -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahdi Rahimi | Web Developer</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="slideshow.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>Guil H</h1>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <div class="container header-inner">
+      <div class="header-left">
+        <h1>Mahdi Rahimi</h1>
+        <p class="subtitle">Web Developer</p>
+      </div>
 
-    <!-- Projects Section -->
-    
-    <!--
-        Challenge: Add your project slideshow
-        * Place in the HTML in the projects section
-        * Add the slideshow's CSS to slideshow.css
-        * Include the JavaScript in script.js
-    -->
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="container slider">      
-            <!-- Slide 1 -->
-            <div class="slide">
-                <img src="images/project1.jpg" alt="Project 1">
-                <div class="slide-content">
-                    <h3>Website Hero</h3>
-                    <p>A site hero project for HoverChair, a hovercraft-inspired desk chair.</p>
-                </div>
-            </div>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <!-- Slide 2 -->
-            <div class="slide">
-                <img src="images/project2.jpg" alt="Project 2">
-                <div class="slide-content">
-                    <h3>Project 2</h3>
-                    <p>Description for Project 2</p>
-                </div>
-            </div>
+  <!-- Hero / Quick Contact -->
+  <section id="contact" class="quick-contact">
+    <div class="container contact-grid">
+      <div class="contact-card">
+        <h2>Contact</h2>
 
-            <!-- Slide 3 -->
-            <div class="slide">
-                <img src="images/project3.jpg" alt="Project 3">
-                <div class="slide-content">
-                    <h3>Project 3</h3>
-                    <p>Description for Project 3</p>
-                </div>
-            </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <div class="label">Phone</div>
+            <a href="tel:+61401244778">+61 040 124 4778</a>
+          </div>
         </div>
 
-        <div class="dot-navigation">
-            <!-- Dot navigation will be dynamically generated using JavaScript -->
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <div class="label">Email</div>
+            <a href="mailto:mahdirahimi.webdev@gmail.com">mahdirahimi.webdev@gmail.com</a>
+          </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about">
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <div>
+            <div class="label">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/mahdirahimi1994" target="_blank" rel="noreferrer">
+              linkedin.com/in/mahdirahimi1994
+            </a>
+          </div>
+        </div>
+
+        <div class="mini-note">
+          <i class="fa-regular fa-file-lines"></i>
+          <span>
+            Resume: <a href="path/to/your/resume.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="summary-card">
         <h2>About Me</h2>
-        <div class="container about-content">
-            <img src="images/photo.jpg" alt="Guil's Picture">
-            <p>
-                Hi there! I'm Guil, a passionate web developer with a love for building 
-                awesome websites. I enjoy experimenting with new technologies and 
-                turning ideas into reality. When I'm not coding, you can find me exploring 
-                nature or reading a good book.
-            </p>
-            <p>
-                Feel free to check out my <a href="path/to/your/resume.pdf" target="_blank">resume</a> 
-                to learn more about my professional experience and skills.
-            </p>
-        </div>
-    </section>
+        <p>
+          I am a dedicated web developer with 2 years of experience. My work has focused on designing and implementing
+          user interfaces and server-side functionalities to build efficient and functional web applications.
+          I have developed strong technical skills, effective teamwork abilities, and a commitment to meeting project
+          goals and deadlines. I am eager to continue growing professionally, contributing my skills, dedication, and
+          enthusiasm to your team.
+        </p>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="skill">
-                <h3>HTML</h3>
-                <p>Proficient in writing semantic and accessible HTML code for building web pages.</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;">90%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>CSS</h3>
-                <p>Skilled in styling web pages with CSS and creating responsive layouts.</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;">85%</div>
-                </div>
-            </div>
-            <div class="skill">
-                <h3>JavaScript</h3>
-                <p>Familiar with JavaScript and building interactive features for websites.</p>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;">70%</div>
-                </div>
-            </div>
+        <div class="highlights">
+          <div class="highlight">
+            <div class="highlight-title">Current</div>
+            <div class="highlight-text">Full-time Web Developer (Agriculture Victoria)</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-title">Key Focus</div>
+            <div class="highlight-text">Genolink & SPOT web applications</div>
+          </div>
+          <div class="highlight">
+            <div class="highlight-title">Tech</div>
+            <div class="highlight-text">React, Node/Express, SQL, Docker, AWS</div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer Section -->
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/your-handle" target="_blank"><i class="fab fa-instagram"></i></a>
+  <!-- Projects Section (Slideshow) -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="container slider">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <img src="images/genolink.jpg" alt="Genolink Application" />
+          <div class="slide-content">
+            <h3>Genolink</h3>
+            <p>
+              Web platform integrating genomic and passport data workflows. Ongoing maintenance and improvements based on user feedback.
+            </p>
+          </div>
         </div>
-        <p>&copy; 2023 Guil H. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <img src="images/spot.jpg" alt="SPOT Application" />
+          <div class="slide-content">
+            <h3>SPOT</h3>
+            <p>
+              Centralized data management system for Agriculture Victoria and InterGrain using Dolt (version-controlled database),
+              Node/Express backend, and React frontend. Deployed on AWS EC2 with Docker and Nginx.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+          <img src="images/gigwa-germinate.jpg" alt="Gigwa & Germinate Integration" />
+          <div class="slide-content">
+            <h3>Gigwa & Germinate Integration</h3>
+            <p>
+              Built and used API endpoints for retrieving and filtering large-scale genotypic data. Set up servers on AWS EC2
+              and supported secure deployments with SSL (Certbot).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dot-navigation" aria-label="Project slideshow navigation"></div>
+
+      <p class="projects-note">
+        <strong>Tip:</strong> Put your real screenshots in <code>/images</code> using these names:
+        <code>genolink.jpg</code>, <code>spot.jpg</code>, <code>gigwa-germinate.jpg</code>.
+      </p>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="container">
+      <h2>Work History</h2>
+
+      <div class="timeline">
+        <div class="role">
+          <div class="role-header">
+            <h3>Full-time Web Developer</h3>
+            <div class="role-meta">AgriBio Centre for AgriBioScience, Agriculture Victoria • Nov 2023 – Present</div>
+          </div>
+
+          <h4>Key Responsibilities</h4>
+          <ul>
+            <li>Update and maintenance of Genolink application; implement improvements based on regular user feedback.</li>
+            <li>Ensure application stability and reliability through monitoring and ongoing enhancements.</li>
+            <li>Design and develop SPOT: centralized data management system for Agriculture Victoria and InterGrain.</li>
+            <li>Use Dolt for version-controlled data management; build backend with Node.js/Express.js for authentication, validation, and uploads.</li>
+            <li>Develop React.js frontend; deploy on AWS EC2; support secure and optimized server performance using Docker and Nginx.</li>
+          </ul>
+
+          <h4>Achievements</h4>
+          <ul>
+            <li>Improved Genolink stability and adoption by integrating continuous user feedback.</li>
+            <li>Delivered SPOT end-to-end (React + Node/Express + Dolt) and released regular updates to improve user experience.</li>
+            <li>Deployed SPOT on AWS EC2 with Docker and Nginx for performance and security.</li>
+            <li>Invited to showcase Genolink at the International Wheat Conference for its impact on wheat research and data management.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-header">
+            <h3>Casual Web Developer</h3>
+            <div class="role-meta">AgriBio Centre for AgriBioScience, Agriculture Victoria • Jun 2023 – Nov 2023</div>
+          </div>
+
+          <h4>Key Responsibilities</h4>
+          <ul>
+            <li>Investigate genomic platforms (Gigwa, Google Genomics) and set up a Gigwa server on AWS EC2.</li>
+            <li>Work with Gigwa API endpoints to retrieve and filter genotypic data from VCF files.</li>
+            <li>Create Genolink to interface with Genesys-PGR and genomic platforms (Germinate and Gigwa) via APIs.</li>
+            <li>Build Genesys API endpoints for passport data; develop React frontend and Node/Express backend integrations.</li>
+          </ul>
+
+          <h4>Achievements</h4>
+          <ul>
+            <li>Configured Gigwa and retrieved large-scale genotypic data through API endpoints.</li>
+            <li>Streamlined retrieval and visualization of passport + genotype data using React.js and Node.js.</li>
+            <li>Enabled smooth data exchange by creating new API endpoints and supporting secure infrastructure on AWS EC2.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-header">
+            <h3>Backend Intern</h3>
+            <div class="role-meta">AgriBio Centre for AgriBioScience, Agriculture Victoria • Jan 2023 – Jun 2023</div>
+          </div>
+
+          <h4>Key Responsibilities</h4>
+          <ul>
+            <li>Set up Germinate application; build production frontend and deploy server on Tomcat using Gradle on AWS.</li>
+            <li>Use Certbot for SSL/HTTPS; create Dockerfiles for MySQL and Tomcat containers.</li>
+            <li>Investigate Germinate backend, genotype storage, data types, and import/export endpoints.</li>
+            <li>Add endpoints to retrieve datasets, samples, and genotype values for specified ranges and marker lists.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Accessibility</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <div class="tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JWT</span>
+            <span class="tag">OpenID Connect</span>
+            <span class="tag">OAuth 2.0</span>
+            <span class="tag">API Development</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>DevOps / Cloud</h3>
+          <div class="tags">
+            <span class="tag">Docker</span>
+            <span class="tag">Git</span>
+            <span class="tag">AWS EC2</span>
+            <span class="tag">Route 53</span>
+            <span class="tag">Security Groups</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">Certbot (SSL)</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>Testing & Extra</h3>
+          <div class="tags">
+            <span class="tag">Jest</span>
+            <span class="tag">Python</span>
+            <span class="tag">PHP</span>
+            <span class="tag">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education + Awards + Certificates -->
+  <section id="education">
+    <div class="container two-col">
+      <div class="panel">
+        <h2>Education</h2>
+        <div class="edu-item">
+          <h3>Master of Information Technology (2020–2023)</h3>
+          <p>La Trobe University — Melbourne, VIC</p>
+          <p><strong>GPA:</strong> 89.7</p>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Awards</h2>
+        <ul class="clean-list">
+          <li>La Trobe University Student Excellence Recognition</li>
+          <li>La Trobe University International Merit Scholarship</li>
+          <li>Recognized by the Australian Computer Society (ACS) for successful assessment as a Web Developer</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="container">
+      <h2>Certificates</h2>
+      <ul class="clean-list columns">
+        <li>HTML Essential Training</li>
+        <li>CSS Essential Training</li>
+        <li>User Experience for Web Design</li>
+        <li>UX Foundations: Accessibility</li>
+        <li>JavaScript Essential Training</li>
+        <li>React.js Essential Training</li>
+        <li>Git Essential Training</li>
+        <li>Docker Essential Training</li>
+        <li>Node.js Essential Training</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/mahdirahimi1994" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:mahdirahimi.webdev@gmail.com" aria-label="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      <a href="tel:+61401244778" aria-label="Phone">
+        <i class="fa-solid fa-phone"></i>
+      </a>
+    </div>
+    <p>&copy; <span id="year"></span> Mahdi Rahimi. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
